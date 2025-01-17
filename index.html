@@ -121,23 +121,28 @@
       }
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1080px) {
+      @media (min-width: 360px) {
         .pricing-container{
           flex-direction: column;
-          height: 100%;
+          min-height: 70vh;
           width: 100%;
         }
 
         .pricing-plan{
-          width: 350px
+          width: 400px;
+          padding: -50px;
+          margin-bottom: 30px;
+          border-radius: 5%;
         }
 
-        .pricing-containe{
-          flex-direction: column;
-          height: 100%;
-          width: 100%;
+
+        #background{
+          background-image: url("./asset/image/background2.jpg");
+          background-position: center;
+          background-attachment: fixed;
         }
 
+        /* other section*/
         .heading{
           font-size: 25px;
           color: antiquewhite;
