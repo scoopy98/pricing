@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: #000; 
+      }
+
+      .pricing-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .pricing-plan{
+        flex: 1;
+        border-radius: 10%;
+        width: 4oopx;
+        background-color: gainsboro;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .plan-features{
+        list-style-type: none;
+      }
+
+      .plan-title{
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .plan-price{
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .plan-features li{
+        margin-bottom: 20px;
+      }
+
+      .plan-button{
+        padding: 20px;
+        background-color: orangered;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .pricing-containe{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      #background{
+        background-attachment: fixed;
+        background-position: center;
+        background-image: url("./asset/image/pexels-eberhardgross-691668.jpg");
+      }
+
+      .contaner2{
+        display: flex;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        background-color: gainsboro;
+        margin-top: -30px;
+      }
+
+      .heading{
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 35px;
+      }
+
+      .contaner3{
+        display: flex;
+        height: 600px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(104, 78, 78);
+        gap: 8%;
+      }
+
+      .contaner3 p{
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+        width: 300px;
+      }
+
+      .image1{
+        background-image: url("./asset/image/circle.jpg");
+        background-position: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+        }
+
+        .pricing-plan{
+          width: 350px
+        }
+
+        .pricing-containe{
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+        }
+
+        .heading{
+          font-size: 25px;
+          color: antiquewhite;
+        }
+
+        .contaner2{
+          flex-direction: column;
+          border: 10px solid #fff;
+          border-radius: 30px;
+        }
+
+        .contaner3{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+        }
+
+        .image1{
+          margin-top: 80px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="background">
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  <div class="contaner2">
+     <div class="heading">
+        <h2>testimonies</h2>
+     </div>
+</div>
+  <div class="contaner3">
+     <div class="image">
+        <div class="image1"></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's</p>
+     </div>
+     <div class="image">
+         <div class="image1"></div>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's</p>
+     </div>
+     <div class="image">
+         <div class="image1"></div>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's</p>
+     </div>
+</div>
+  </body>
+</html>
